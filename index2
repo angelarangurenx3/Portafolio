@@ -1,0 +1,16 @@
+const axios = require('axios');
+
+axios.get('http://jsonplaceholder.typicode.com/posts')
+.then(a => {
+    console.log(a.data[0]);
+})
+axios.get('https://api.covid19api.com/total/country/venezuela')
+.then(a => {
+
+    let ve = a.data.length;
+    console.log(a.data[ve -1].confirmed);
+})
+.catch(error => {
+    console.log(error);
+    console.log(`data nula ${error.data}`);
+})
