@@ -1,0 +1,14 @@
+{
+  "name": "compu-vi",
+  "version": "1.0.0",
+  "description": "clase introductoria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "angel aranguren",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
