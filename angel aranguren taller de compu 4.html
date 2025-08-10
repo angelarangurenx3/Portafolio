@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<Title>Actividad Compu 4</Title>
+</head>
+<body>
+	<h1>Numero Mayor</h1>
+	<script>
+	n=parseInt(prompt("Numeros Requeridos"));
+	w=0;
+	for(i=0; i<n; i++){
+	u=parseInt(prompt("Insertar Numero"));
+	if(u>w){
+	w=u;
+	}
+	}
+	alert("el numero mayor es:"+w);
+	</script>
+	<h1>Par o Impar</h1>
+	<script>
+	n=0;
+	n=parseInt(prompt("Insertar Numero"));
+	if(n%2==0){
+	alert("el numero es par")
+	}else{
+	alert("el numero es impar");
+	}
+	</script>
+	<h1>Convertir a Fecha</h1>
+	<script>
+	function JSClock() {
+	var tiempo = new Date();
+	var hora = tiempo.getHours();
+	var minutos = tiempo.getMinutes();
+	var segundos = tiempo.getSeconds();
+	var temp = "" + ((hora > 12) ? hora - 12 : hora);
+	if (hora == 0)
+	temp = "12";
+	temp += ((minutos < 10) ? ":0" : ":") + minutos;
+	temp += ((segundos < 10) ? ":0" : ":") + segundos;
+	temp += (hora >= 12) ? " P.M." : " A.M.";
+	return temp;
+	}
+	</script>
+</body>
+</html>
